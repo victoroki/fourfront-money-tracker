@@ -91,88 +91,43 @@
                     </ul>
                 </div>
                 <div class="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-800 dark:from-indigo-900 dark:via-indigo-800 dark:to-purple-950 relative lg:-ml-px -mb-px lg:mb-0 rounded-t-lg lg:rounded-t-none lg:rounded-r-lg aspect-[335/376] lg:aspect-auto w-full lg:w-[438px] shrink-0 overflow-hidden flex items-center justify-center">
-                    {{-- Decorative background circles --}}
-                    <div style="position:absolute;width:300px;height:300px;background:rgba(255,255,255,0.05);border-radius:9999px;top:-60px;right:-60px;"></div>
-                    <div style="position:absolute;width:200px;height:200px;background:rgba(255,255,255,0.05);border-radius:9999px;bottom:-40px;left:-40px;"></div>
 
-                    {{-- Dashboard Card --}}
-                    <div style="position:relative;z-index:10;width:100%;max-width:340px;padding:1.5rem;">
+                    {{-- Decorative rings --}}
+                    <div style="position:absolute;width:380px;height:380px;border:1px solid rgba(255,255,255,0.08);border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);"></div>
+                    <div style="position:absolute;width:280px;height:280px;border:1px solid rgba(255,255,255,0.1);border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);"></div>
+                    <div style="position:absolute;width:180px;height:180px;border:1px solid rgba(255,255,255,0.12);border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);"></div>
 
-                        {{-- Wallet Balance Card --}}
-                        <div style="background:rgba(255,255,255,0.12);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.2);border-radius:1rem;padding:1.25rem;margin-bottom:1rem;">
-                            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.5rem;">
-                                <span style="color:rgba(255,255,255,0.7);font-size:0.75rem;font-weight:500;letter-spacing:0.05em;text-transform:uppercase;">Total Balance</span>
-                                <span style="background:rgba(255,255,255,0.15);border-radius:9999px;padding:0.2rem 0.6rem;font-size:0.7rem;color:rgba(255,255,255,0.8);">All Wallets</span>
+                    {{-- Glowing blob --}}
+                    <div style="position:absolute;width:220px;height:220px;background:rgba(167,139,250,0.25);border-radius:50%;filter:blur(50px);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;"></div>
+
+                    {{-- Central icon --}}
+                    <div style="position:relative;z-index:10;display:flex;flex-direction:column;align-items:center;gap:1.25rem;">
+
+                        <div style="width:80px;height:80px;background:rgba(255,255,255,0.15);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.25);border-radius:1.5rem;display:flex;align-items:center;justify-content:center;">
+                            <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a2.25 2.25 0 00-2.25-2.25H15a3 3 0 11-6 0H5.25A2.25 2.25 0 003 12m18 0v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6m18 0V9M3 12V9m18-3a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 9m18 0V9a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 9"/>
+                            </svg>
+                        </div>
+
+                        <div style="display:flex;gap:0.75rem;">
+                            <div style="width:44px;height:44px;background:rgba(255,255,255,0.1);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.2);border-radius:0.75rem;display:flex;align-items:center;justify-content:center;">
+                                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="rgba(255,255,255,0.8)" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/>
+                                </svg>
                             </div>
-                            <div style="font-size:2rem;font-weight:700;color:#ffffff;letter-spacing:-0.02em;margin-bottom:0.75rem;">$24,830.00</div>
-                            <div style="display:flex;gap:1rem;">
-                                <div style="flex:1;background:rgba(255,255,255,0.08);border-radius:0.5rem;padding:0.5rem 0.75rem;">
-                                    <div style="display:flex;align-items:center;gap:0.3rem;margin-bottom:0.2rem;">
-                                        <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
-                                        <span style="font-size:0.65rem;color:#4ade80;font-weight:600;">Income</span>
-                                    </div>
-                                    <span style="font-size:0.875rem;font-weight:600;color:#ffffff;">$8,240</span>
-                                </div>
-                                <div style="flex:1;background:rgba(255,255,255,0.08);border-radius:0.5rem;padding:0.5rem 0.75rem;">
-                                    <div style="display:flex;align-items:center;gap:0.3rem;margin-bottom:0.2rem;">
-                                        <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="#f87171" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
-                                        <span style="font-size:0.65rem;color:#f87171;font-weight:600;">Expense</span>
-                                    </div>
-                                    <span style="font-size:0.875rem;font-weight:600;color:#ffffff;">$3,150</span>
-                                </div>
+                            <div style="width:44px;height:44px;background:rgba(255,255,255,0.1);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.2);border-radius:0.75rem;display:flex;align-items:center;justify-content:center;">
+                                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="rgba(255,255,255,0.8)" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/>
+                                </svg>
+                            </div>
+                            <div style="width:44px;height:44px;background:rgba(255,255,255,0.1);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.2);border-radius:0.75rem;display:flex;align-items:center;justify-content:center;">
+                                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="rgba(255,255,255,0.8)" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"/>
+                                </svg>
                             </div>
                         </div>
 
-                        {{-- Mini Bar Chart --}}
-                        <div style="background:rgba(255,255,255,0.1);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.15);border-radius:1rem;padding:1rem;margin-bottom:1rem;">
-                            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;">
-                                <span style="color:#ffffff;font-size:0.75rem;font-weight:600;">Cash Flow â€” Feb</span>
-                                <span style="color:rgba(255,255,255,0.5);font-size:0.65rem;">Last 7 days</span>
-                            </div>
-                            <div style="display:flex;align-items:flex-end;gap:6px;height:52px;">
-                                <div style="flex:1;background:rgba(99,102,241,0.6);border-radius:3px 3px 0 0;height:40%;transition:height 0.3s;"></div>
-                                <div style="flex:1;background:rgba(99,102,241,0.6);border-radius:3px 3px 0 0;height:65%;transition:height 0.3s;"></div>
-                                <div style="flex:1;background:rgba(99,102,241,0.6);border-radius:3px 3px 0 0;height:45%;transition:height 0.3s;"></div>
-                                <div style="flex:1;background:rgba(99,102,241,0.6);border-radius:3px 3px 0 0;height:80%;transition:height 0.3s;"></div>
-                                <div style="flex:1;background:rgba(167,139,250,0.9);border-radius:3px 3px 0 0;height:55%;transition:height 0.3s;"></div>
-                                <div style="flex:1;background:rgba(99,102,241,0.6);border-radius:3px 3px 0 0;height:70%;transition:height 0.3s;"></div>
-                                <div style="flex:1;background:rgba(255,255,255,0.9);border-radius:3px 3px 0 0;height:100%;transition:height 0.3s;"></div>
-                            </div>
-                        </div>
-
-                        {{-- Recent Transactions --}}
-                        <div style="background:rgba(255,255,255,0.1);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.15);border-radius:1rem;padding:1rem;">
-                            <div style="color:#ffffff;font-size:0.75rem;font-weight:600;margin-bottom:0.6rem;">Recent Transactions</div>
-                            <div style="display:flex;flex-direction:column;gap:0.5rem;">
-                                <div style="display:flex;align-items:center;justify-content:space-between;">
-                                    <div style="display:flex;align-items:center;gap:0.5rem;">
-                                        <div style="width:28px;height:28px;background:rgba(74,222,128,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;">
-                                            <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
-                                        </div>
-                                        <span style="font-size:0.7rem;color:rgba(255,255,255,0.85);">Salary Deposit</span>
-                                    </div>
-                                    <span style="font-size:0.7rem;font-weight:600;color:#4ade80;">+$5,000</span>
-                                </div>
-                                <div style="display:flex;align-items:center;justify-content:space-between;">
-                                    <div style="display:flex;align-items:center;gap:0.5rem;">
-                                        <div style="width:28px;height:28px;background:rgba(248,113,113,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;">
-                                            <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="#f87171" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
-                                        </div>
-                                        <span style="font-size:0.7rem;color:rgba(255,255,255,0.85);">Utility Bill</span>
-                                    </div>
-                                    <span style="font-size:0.7rem;font-weight:600;color:#f87171;">-$320</span>
-                                </div>
-                                <div style="display:flex;align-items:center;justify-content:space-between;">
-                                    <div style="display:flex;align-items:center;gap:0.5rem;">
-                                        <div style="width:28px;height:28px;background:rgba(74,222,128,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;">
-                                            <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
-                                        </div>
-                                        <span style="font-size:0.7rem;color:rgba(255,255,255,0.85);">Transfer In</span>
-                                    </div>
-                                    <span style="font-size:0.7rem;font-weight:600;color:#4ade80;">+$1,200</span>
-                                </div>
-                            </div>
-                        </div>
+                        <p style="color:rgba(255,255,255,0.5);font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;">Wallets &bull; Users &bull; Transactions</p>
                     </div>
 
                     <div class="absolute inset-0 rounded-t-lg lg:rounded-t-none lg:rounded-r-lg shadow-[inset_0px_0px_0px_1px_rgba(26,26,0,0.16)] dark:shadow-[inset_0px_0px_0px_1px_#fffaed2d]"></div>
